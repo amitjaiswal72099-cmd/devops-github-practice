@@ -1,2 +1,7 @@
 APP_ENV=development
+<<<<<<< HEAD
 APP_ENV=staging
+=======
+APP_ENV=production
+>>>>>>> feature-b
+APP_ENV=production
