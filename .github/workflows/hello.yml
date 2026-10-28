@@ -8,8 +8,10 @@ jobs:
 
      steps:
         -name: Print Message
-          run: echo "Hello Devops from Github Actions"
+         run: echo "Hello Devops from Github Actions"
+         
         -name: Show Date
-          run: date
+         run: date
+         
         -name: Show current directory
-          run: pwd
+         run: pwd
