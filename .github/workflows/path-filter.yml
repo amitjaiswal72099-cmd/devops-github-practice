@@ -1,0 +1,14 @@
+name: Path filter practice
+
+on: 
+ push:
+   paths:
+     - 'app.py'
+
+jobs:
+  path-test:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: Display path message
+       run: echo "app.py has been changed"
