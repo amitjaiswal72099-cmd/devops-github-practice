@@ -19,3 +19,6 @@ jobs:
 
       - name: Show Runner OS
         run: uname -a
+
+      - name: Show current Directory
+        run: pwd
