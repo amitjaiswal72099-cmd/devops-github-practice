@@ -1,0 +1,17 @@
+name: Tag trigger practice
+
+on: 
+ push:
+   tags:
+     - 'v*'
+
+jobs:
+  release-job:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: Display release message
+       run: echo "New version tag detected"
+
+     - name: Display tag
+       run: echo "Release tag:  $GITHUB_REF_NAME"
