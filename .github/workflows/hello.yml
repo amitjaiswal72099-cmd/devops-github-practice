@@ -1,0 +1,21 @@
+name: My First Github Actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello-job:
+    name: My First Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Hello Devops from Github Actions"
+
+      - name: Show Date
+        run: date
+
+      - name: Show Runner OS
+        run: uname -a
