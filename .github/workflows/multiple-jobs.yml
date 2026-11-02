@@ -1,0 +1,29 @@
+name: Multiple jobs practice
+
+on:
+ workflow_dispatch
+
+jobs:
+  checkout-job:
+    name: Checkout code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+  test-job:
+    name: Test Application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run test
+        run: echo "Application testing completed"
+
+  build-job:
+    name: Build Application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build Message
+        run: echo "Application build completed"
